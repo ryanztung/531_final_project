@@ -1,0 +1,29 @@
+EDUCATION
+Northeastern University
+B.S. in Information Systems
+
+Boston University
+BS in Information Systems
+
+Massasoit Community College
+BS in Information Systems
+
+PROFESSIONAL EXPERIENCE
+Business Solution Project Manager
+01/2011–01/2017
+- led PLM, digital merchandising, and marketing system integrations for 700+ users
+
+Lead Data Migration Analyst
+01/2008–01/2011
+- headed enterprise SAP 7.0 migration
+
+Quality Assurance Data Analyst
+01/2006–01/2008
+- supported new product launches
+
+Senior Forecast Analyst
+01/2006–01/2008
+- forecasted production and supply chain KPIs
+
+SKILLS
+PLM (PTC FlexPLM, Enovia), SAP 7.0 (CRM, SD, MM, WM, FI/CO), SQL, SAS, Cognos, MicroStrategy, QlikView, Crystal Reports, Google Analytics, JIRA, HPQC, SharePoint, MS Project, Visio, Access/Excel (Advanced), ASPEN, Unix/Tivoli/CA7, Data migration/ETL, UAT/SIT, SDLC documentation, KPI modeling, vendor scorecards, offshore collaboration, and training development. Improved global speed-to-market processes and reduced warehouse liquidations by optimizing supply chain and reporting automation.

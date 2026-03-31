@@ -1,0 +1,30 @@
+EDUCATION
+University of North Alabama
+Bachelors in Marketing
+
+Health care
+Not specified
+
+PROFESSIONAL EXPERIENCE
+QA Test Analyst
+09/2014–Current
+- Manual QA across web
+
+Quality Assurance Analyst
+10/2013–07/2014
+- Test strategy, regression, Agile
+
+Manual Tester
+06/2010–06/2013
+- POS certification
+
+Jr. QA Analyst
+07/2009–05/2010
+- Airline web apps
+
+GUI/security tests
+06/2010–06/2013
+- Airline web apps
+
+SKILLS
+Manual QA across web, client/server, SaaS; SDLC/STLC; test plans/cases; functional/regression/UAT/performance/smoke; mobile testing (iOS/Android); cross-browser; SQL backend validation; Agile/Scrum; defect mgmt (Quality Center/JIRA); stakeholder comms; RCA; built quality metrics

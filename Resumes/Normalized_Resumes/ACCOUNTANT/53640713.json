@@ -1,0 +1,49 @@
+{
+  "education": [
+    {
+      "school": "ICFAI University",
+      "degree": "MBA",
+      "details": "2008"
+    },
+    {
+      "school": "Calicut University",
+      "degree": "B.Com (Tax)",
+      "details": "2005"
+    },
+    {
+      "school": "Tally ERP, Peachtree, DacEasy",
+      "degree": "Diploma in Manual & Computerized Accounting"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Accountant/Finance",
+      "dates": "06/2012–Present",
+      "bullets": [
+        "built finance function for a startup subsidiary"
+      ]
+    },
+    {
+      "title": "Accountant, MEP Trading & Contracting",
+      "dates": "01/2009–05/2012",
+      "bullets": [
+        "AP/AR, GL, journal entries, job costing, aging, petty cash"
+      ]
+    },
+    {
+      "title": "Administrator/Accounts",
+      "dates": "2009",
+      "bullets": [
+        "clerical accounting support, receipts, timesheets/payroll inputs, collections, merchant reconciliations, promotions reporting"
+      ]
+    },
+    {
+      "title": "Accountant Trainee",
+      "dates": "05/2005–04/2006",
+      "bullets": [
+        "day books, bank recs, stock estimation, entries, ledgers, petty cash, vendor AP, and fixed-asset updates"
+      ]
+    }
+  ],
+  "skills_and_achievements": "Financial statements, management reporting, cost accounting, asset management, budgeting/forecasting, cash-flow management, AP/AR, payroll (20+ staff), audit prep, inventory control, job costing, bank recs, GL reconciliations, policies/processes; software: Tally ERP, Peachtree, DacEasy, Delta (Qatar), MS Office (Excel/Access/Word)"
+}

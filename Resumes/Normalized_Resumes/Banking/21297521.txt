@@ -1,0 +1,29 @@
+EDUCATION
+UCLA Anderson
+MBA
+
+Thapar Univ.
+BE
+
+MIT
+Master of Science in Computer Science
+
+PROFESSIONAL EXPERIENCE
+Manager
+2013-Present
+- stabilized VOD rights app
+
+Senior Director
+2011-13
+- led solution arch for streaming
+
+FVP Countrywide
+11M proj, $29.3M ROI
+- won $9M B&N
+
+IndyMac
+C++ engine +75% perf.
+- led IndyMac
+
+SKILLS
+Lead 50+ across 25 apps; Agile/Scrum rollout; Jira at scale; APM (Splunk/AppDynamics) MTTR↓; AWS cloud-native (12-factor, EBS, RDS, SNS, Lambdas); DevOps/CI/CD (Git, Jenkins, SonarQube); DevSecOps (Veracode/Snyk); Kubernetes/Docker; Java/.NET/iOS; API/IdM; KPIs/SLAs; vendor/RFPs; exec comms.

@@ -1,0 +1,78 @@
+{
+  "education": [
+    {
+      "school": "Gujarat University",
+      "degree": "Master of Accounting"
+    },
+    {
+      "school": "Triton College",
+      "degree": "COBOL programming coursework"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Accountant",
+      "dates": "2001-Present",
+      "bullets": [
+        "Overseeing intercompany and reinsurance accounting"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1999-2001",
+      "bullets": [
+        "Cash settlements"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1996-1999",
+      "bullets": [
+        "Period close"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1999-2001",
+      "bullets": [
+        "Investment activities"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1996-1999",
+      "bullets": [
+        "Bank reconciliations"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1992-1996",
+      "bullets": [
+        "Claims approval"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1991-1992",
+      "bullets": [
+        "Bank proof operations"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1988-1990",
+      "bullets": [
+        "Industrial billing"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "1984-1988",
+      "bullets": [
+        "Accounts receivable"
+      ]
+    }
+  ],
+  "skills_and_achievements": "Expert in monthly close, GAAP reporting, intercompany and reinsurance recoverables, AP/AR, GL reconciliations, cash-settlement forecasting, and SAP account provisioning; proficient with fixed assets, leases, and tax filings; advanced user of Excel, Access, and PowerPoint;"
+}

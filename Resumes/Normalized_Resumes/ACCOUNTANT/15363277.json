@@ -1,0 +1,43 @@
+{
+  "education": [
+    {
+      "school": "University of Phoenix",
+      "degree": "MBA"
+    },
+    {
+      "school": "Hampton University",
+      "degree": "B.S. Finance"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Finance Manager",
+      "dates": "2000–2012",
+      "bullets": [
+        "Owned $22M cap/69M op budgets"
+      ]
+    },
+    {
+      "title": "Manager & NYS Licensed Real Estate Salesperson",
+      "dates": "2012–Present",
+      "bullets": [
+        "Managed 20 agents"
+      ]
+    },
+    {
+      "title": "Senior Accountant",
+      "dates": "2000–2012",
+      "bullets": [
+        "Ran exec reviews"
+      ]
+    },
+    {
+      "title": "Accountant",
+      "dates": "2000–2012",
+      "bullets": [
+        "Asset mgmt, license compliance, POs/invoice controls"
+      ]
+    }
+  ],
+  "skills_and_achievements": "SAP/Oracle/PeopleSoft/Cognos, Advanced Excel; FP&A, capital/operating budgeting, financial modeling (ROI/NPV/IRR), vendor negotiations, change management, leadership. Delivered $12M projected savings via IT outsourcing; $2.9M telco savings; in-house SAP transition saved ~$2M; shifted capitalization policy; led ~32 IT capital projects/year; Brand Ambassador (x2) and MVP awards."
+}

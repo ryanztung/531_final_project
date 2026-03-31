@@ -1,0 +1,33 @@
+EDUCATION
+University of Missouri–Columbia
+M.S. Computer Engineering
+
+University of Missouri–Columbia
+B.S. Finance & Banking
+
+China Business Student Association
+VP
+
+PROFESSIONAL EXPERIENCE
+Corporate Banking Assistant
+May–Aug 2015
+- appraisal, cash flow, RAROC, sensitivity
+
+Intern
+Jun–Aug 2012
+- SQL research
+
+Office Assistant
+Jun–Jul 2010
+- SOP updates
+
+Undergraduate Researcher
+Mar 2011–May 2012
+- image classification (+30% speed)
+
+Assistant Analyst
+Jun–Jul 2010
+- due diligence support
+
+SKILLS
+C/C++, Python, MATLAB, SQL, R, LUA, VBA; ML (supervised/unsupervised/DNN); forecasting & financial analysis; English/Chinese. Built VBA systems improving workflow (up to 20%); SQL research; image-processing pipeline (+30% speed)

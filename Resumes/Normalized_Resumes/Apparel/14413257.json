@@ -1,0 +1,47 @@
+{
+  "education": [
+    {
+      "school": "Hebert H. Lehman College",
+      "degree": "BA",
+      "details": "fine arts/psychology coursework"
+    },
+    {
+      "school": "...",
+      "degree": "...",
+      "details": ""
+    }
+  ],
+  "experience": [
+    {
+      "title": "Owner/Senior Graphic & UX Designer",
+      "dates": "2010–Present",
+      "bullets": [
+        "e-commerce UI",
+        "customizer tool",
+        "brand visuals"
+      ]
+    },
+    {
+      "title": "Senior Graphic Designer",
+      "dates": "2006–2007",
+      "bullets": [
+        "licensed kids’ art"
+      ]
+    },
+    {
+      "title": "Senior/Graphic Designer",
+      "dates": "2002–2006",
+      "bullets": [
+        "girls’ tweens graphics"
+      ]
+    },
+    {
+      "title": "Graphic Designer",
+      "dates": "1998–2002",
+      "bullets": [
+        "boys/girls tees"
+      ]
+    }
+  ],
+  "skills_and_achievements": "Adobe CS6 (Illustrator, InDesign, Photoshop), HTML/CSS/PHP, UX/web design, e-commerce, Corel, QuarkXPress, Flash/ActionScript, 3D Max, Maya, Final Cut Pro, photography, packaging, SMS deployment, photo restoration, print/digital marketing, leadership, trend research, tech packs"
+}

@@ -1,0 +1,73 @@
+{
+  "education": [
+    {
+      "school": "Our Lady of Holy Cross College",
+      "degree": "M.A.",
+      "details": "Administration & Supervision"
+    },
+    {
+      "school": "Our Lady of Holy Cross College",
+      "degree": "B.S.",
+      "details": "Human Resource Management"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Teacher",
+      "dates": "2017–Present",
+      "bullets": [
+        "advocate for students with visual impairments"
+      ]
+    },
+    {
+      "title": "Special Education Coordinator",
+      "dates": "07–12/2016",
+      "bullets": [
+        "drove IDEA compliance"
+      ]
+    },
+    {
+      "title": "Lead IEPs",
+      "dates": "07–12/2016",
+      "bullets": [
+        "led PD"
+      ]
+    },
+    {
+      "title": "Chaired SpEd/Behavior Committee",
+      "dates": "07–12/2016",
+      "bullets": [
+        "built resource classroom"
+      ]
+    },
+    {
+      "title": "Hired & coached team",
+      "dates": "08/2004–06/2016",
+      "bullets": [
+        "coached new SpEd teachers"
+      ]
+    },
+    {
+      "title": "Mentor Teacher",
+      "dates": "08/2004–06/2016",
+      "bullets": [
+        "coached new SpEd teachers"
+      ]
+    },
+    {
+      "title": "LAE trainer",
+      "dates": "2011–2012",
+      "bullets": [
+        "district RTI, screenings, data coaching"
+      ]
+    },
+    {
+      "title": "General Education Teacher",
+      "dates": "2003–2004",
+      "bullets": [
+        "co-teaching"
+      ]
+    }
+  ],
+  "skills_and_achievements": "IDEA compliance; IEP leadership; RTI/MSDI; school-wide PBIS; instructional coaching; data analysis & progress monitoring; staffing/interviewing; scheduling/budgeting; PD facilitation; behavior intervention (MDR); collaboration with state agencies; TVI track (vision rehabilitation, low-vision services); documented 95–100% state test pass rates over a decade; consistently ‘Highly Effective’ on Compass."
+}

@@ -1,0 +1,55 @@
+{
+  "education": [
+    {
+      "school": "St. Augustine College",
+      "degree": "A.A.S. Early Childhood Education",
+      "details": "2012"
+    },
+    {
+      "school": "Daycare",
+      "degree": "Teacher",
+      "details": "2008–2012"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Teacher",
+      "dates": "2008–2012",
+      "bullets": [
+        "led classroom routines",
+        "designed weekly projects",
+        "coordinated holiday programs",
+        "trained assistants",
+        "maintained health/safety",
+        "communicated daily with parents"
+      ]
+    },
+    {
+      "title": "Teacher",
+      "dates": "2005–2007",
+      "bullets": [
+        "planned activities",
+        "streamlined proposal/processes",
+        "created client/activity tracking"
+      ]
+    },
+    {
+      "title": "Teacher Aide",
+      "dates": "2003–2005",
+      "bullets": [
+        "supported instruction",
+        "sanitized",
+        "recess/outdoor supervision",
+        "daily reports"
+      ]
+    },
+    {
+      "title": "Mid-level",
+      "dates": "2005–2007",
+      "bullets": [
+        "job_type"
+      ]
+    }
+  ],
+  "skills_and_achievements": "Bilingual English/Spanish; MS Office & PowerPoint; 35 WPM; child safety & hygiene; circle-time facilitation; curriculum/activity planning (music, art, language arts); positive behavior support; special-needs experience; parent communication; classroom documentation; can lift 40 lbs; basic visual design for flyers/web"
+}
