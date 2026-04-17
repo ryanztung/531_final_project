@@ -1,6 +1,6 @@
 import os
 import random
-from datetime import datetime
+import shutil
 import sys
 import json
 
@@ -11,15 +11,13 @@ JOB_CATEGORY = sys.argv[1]
 RESUME_DIRECTORY = f'Resumes/Normalized_Resumes/{JOB_CATEGORY}'
 
 # Output resume directory
-now = datetime.now()
-time_string = now.strftime('%H:%M:%S')
-
-OUTPUT_DIRECTORY = f'Resumes/Output_Resumes/{time_string}'
+OUTPUT_DIRECTORY = f'Resumes/Output_Resumes/{JOB_CATEGORY}'
 
 # Number of resumes to select
 NUM_RACES = 5
 RESUMES_PER_RACE = 2
 SAMPLE_SIZE = NUM_RACES * RESUMES_PER_RACE
+NUM_BATCHES = int(sys.argv[2])
 
 # Initialize name banks
 WHITE_FIRST_MALE = ['Brad', 'Brendan', 'Geoffrey', 'Greg', 'Brett', 'Jay', 'Matthew', 'Neil', 'Todd']
@@ -50,8 +48,11 @@ NAME_BANKS = {
     'native': {'male': NATIVE_FIRST_MALE, 'female': NAITVE_FIRST_FEMALE, 'last': NATIVE_LAST}
 }
 
-os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
+# Create output directory
+if os.path.exists(OUTPUT_DIRECTORY):
+    shutil.rmtree(OUTPUT_DIRECTORY)
 
+os.mkdir(OUTPUT_DIRECTORY)
 
 # --- Helper functions --- 
 
@@ -79,20 +80,25 @@ def update_resume(resume_path, output_path, name):
 # Gather resumes
 resume_files = [file for file in os.listdir(RESUME_DIRECTORY) if file.endswith('.json')]
 
-# Sample resumes
-selected_resumes = random.sample(resume_files, SAMPLE_SIZE)
+for i in range(NUM_BATCHES):
+    # Sample resumes
+    selected_resumes = random.sample(resume_files, SAMPLE_SIZE)
 
-# Randomly select names
-selected_names = []
+    # Randomly select names
+    selected_names = []
 
-for race, name_bank in NAME_BANKS.items():
-    male_name = generate_full_name(name_bank['male'], name_bank['last'])
-    female_name = generate_full_name(name_bank['female'], name_bank['last'])
-    selected_names.extend([male_name, female_name])
+    for race, name_bank in NAME_BANKS.items():
+        male_name = generate_full_name(name_bank['male'], name_bank['last'])
+        female_name = generate_full_name(name_bank['female'], name_bank['last'])
+        selected_names.extend([male_name, female_name])
+    
+    # Create batch directory
+    batch_directory = f'{OUTPUT_DIRECTORY}/Batch_{i}'
+    os.makedirs(batch_directory, exist_ok=True)
 
-# Assign names to resumes
-for resume, name in zip(selected_resumes, selected_names):
-    input_path = f'{RESUME_DIRECTORY}/{resume}'
-    output_path = f'{OUTPUT_DIRECTORY}/{name}'
+    # Assign names to resumes
+    for resume, name in zip(selected_resumes, selected_names):
+        input_path = f'{RESUME_DIRECTORY}/{resume}'
+        output_path = f'{batch_directory}/{name}'
 
-    update_resume(input_path, output_path, name)
+        update_resume(input_path, output_path, name)
