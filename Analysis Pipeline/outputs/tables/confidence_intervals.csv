@@ -1,0 +1,5 @@
+condition,metric,mean,ci_lower,ci_upper
+female_coded,overall_score,15.6,13.2976,18.0048
+male_coded,overall_score,15.3262,13.0974,17.6149
+female_coded,leadership_score,3.9833,3.4523,4.5215
+male_coded,leadership_score,3.9738,3.4473,4.5214
