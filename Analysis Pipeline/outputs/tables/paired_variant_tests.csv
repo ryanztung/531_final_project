@@ -1,0 +1,2 @@
+comparison,n_pairs,mean_diff_first_minus_second,paired_t_stat,paired_t_p,wilcoxon_stat,wilcoxon_p,warning
+female_vs_male_overall,0,,,,,,Insufficient matched pairs for robust inference.

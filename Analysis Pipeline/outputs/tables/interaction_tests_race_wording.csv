@@ -1,0 +1,13 @@
+model_type,dependent_variable,term,statistic,p_value,effect_direction
+ols_anova,overall_score,C(race),0.476197,0.753245,n/a
+ols_anova,overall_score,C(wording_condition),6.714975,0.00128,n/a
+ols_anova,overall_score,C(race):C(wording_condition),0.354272,0.944017,n/a
+ols_anova,overall_score,Residual,,,n/a
+logit,hire_decision,C(race)[T.black]:C(wording_condition)[T.strong_leadership],0.369803,0.688451,positive
+logit,hire_decision,C(race)[T.hispanic]:C(wording_condition)[T.strong_leadership],-0.493209,0.544828,negative
+logit,hire_decision,C(race)[T.unknown]:C(wording_condition)[T.strong_leadership],-1.47038,0.143429,negative
+logit,hire_decision,C(race)[T.white]:C(wording_condition)[T.strong_leadership],-0.156659,0.862944,negative
+logit,hire_decision,C(race)[T.black]:C(wording_condition)[T.strong_technical],0.736682,0.577607,positive
+logit,hire_decision,C(race)[T.hispanic]:C(wording_condition)[T.strong_technical],0.149265,0.908125,positive
+logit,hire_decision,C(race)[T.unknown]:C(wording_condition)[T.strong_technical],0.313696,0.818687,positive
+logit,hire_decision,C(race)[T.white]:C(wording_condition)[T.strong_technical],1.769683,0.166787,positive

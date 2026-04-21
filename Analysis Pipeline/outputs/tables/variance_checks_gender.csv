@@ -1,0 +1,5 @@
+group_col,score_col,levene_stat,p_value,warning
+name_condition,overall_score,0.026626,0.870421,
+name_condition,leadership_score,0.000623,0.980085,
+name_condition,experience_score,0.179408,0.671991,
+name_condition,skills_score,0.001802,0.966153,

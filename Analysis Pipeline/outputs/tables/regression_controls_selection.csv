@@ -1,0 +1,11 @@
+term,coefficient,p_value,conf_low,conf_high,model_type,dependent_variable
+Intercept,-3.147126,0.003608,-5.266419,-1.027833,logit,hire_decision
+C(name_condition)[T.male_coded],-0.039065,0.878174,-0.538571,0.460441,logit,hire_decision
+C(race)[T.black],-0.174745,0.664832,-0.965265,0.615775,logit,hire_decision
+C(race)[T.hispanic],-0.168042,0.647538,-0.888441,0.552357,logit,hire_decision
+C(race)[T.unknown],-0.327209,0.415851,-1.115417,0.460999,logit,hire_decision
+C(race)[T.white],-0.164678,0.675807,-0.936485,0.607129,logit,hire_decision
+C(wording_condition)[T.strong_leadership],0.554338,0.058677,-0.020337,1.129012,logit,hire_decision
+C(wording_condition)[T.strong_technical],0.578913,0.082556,-0.07467,1.232496,logit,hire_decision
+C(qualification_tier)[T.medium],0.460602,0.682471,-1.746137,2.667341,logit,hire_decision
+C(qualification_tier)[T.senior],0.837438,0.427052,-1.229109,2.903984,logit,hire_decision
