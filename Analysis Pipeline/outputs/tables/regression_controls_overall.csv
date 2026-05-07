@@ -1,0 +1,11 @@
+term,coefficient,p_value,conf_low,conf_high,model_type,dependent_variable
+Intercept,11.16252,0.050772,-0.037576,22.362617,ols,overall_score
+C(name_condition)[T.male_coded],-1.600034,0.361096,-5.036938,1.836871,ols,overall_score
+C(race)[T.black],-0.010955,0.996891,-5.527146,5.505236,ols,overall_score
+C(race)[T.hispanic],-1.103921,0.673457,-6.243925,4.036082,ols,overall_score
+C(race)[T.unknown],-2.698961,0.318092,-8.001927,2.604005,ols,overall_score
+C(race)[T.white],0.311483,0.911495,-5.18723,5.810196,ols,overall_score
+C(wording_condition)[T.strong_leadership],4.242908,0.049663,0.00626,8.479557,ols,overall_score
+C(wording_condition)[T.strong_technical],9.124629,0.000248,4.257723,13.991535,ols,overall_score
+C(qualification_tier)[T.medium],-1.505661,0.800855,-13.218307,10.206985,ols,overall_score
+C(qualification_tier)[T.senior],4.451989,0.420101,-6.381094,15.285073,ols,overall_score

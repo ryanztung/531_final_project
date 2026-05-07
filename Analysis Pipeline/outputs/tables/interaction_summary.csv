@@ -1,0 +1,7 @@
+wording_condition,name_condition,mean_overall_score,selection_rate,count
+neutral,female_coded,14.7442,0.0864,301
+neutral,male_coded,11.7837,0.0571,245
+strong_leadership,female_coded,12.2857,0.0714,56
+strong_leadership,male_coded,19.8908,0.1429,119
+strong_technical,female_coded,22.6349,0.0952,63
+strong_technical,male_coded,21.125,0.1429,56

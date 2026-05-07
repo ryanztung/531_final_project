@@ -1,0 +1,7 @@
+model_type,dependent_variable,term,statistic,p_value,effect_direction
+ols_anova,overall_score,C(name_condition),0.204152,0.651507,n/a
+ols_anova,overall_score,C(wording_condition),6.938347,0.001027,n/a
+ols_anova,overall_score,C(name_condition):C(wording_condition),2.872836,0.057098,n/a
+ols_anova,overall_score,Residual,,,n/a
+logit,hire_decision,C(name_condition)[T.male_coded]:C(wording_condition)[T.strong_leadership],1.219742,0.070914,positive
+logit,hire_decision,C(name_condition)[T.male_coded]:C(wording_condition)[T.strong_technical],0.901739,0.177782,positive

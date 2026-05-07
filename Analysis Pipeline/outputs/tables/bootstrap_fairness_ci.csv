@@ -1,0 +1,4 @@
+comparison,metric,estimate,ci_lower,ci_upper,n_a,n_b
+female_minus_male,overall_score,0.27381,-2.964286,3.597738,420,420
+female_minus_male,selection_rate,-0.007143,-0.045238,0.033333,420,420
+female_vs_male,impact_ratio,0.923077,0.595153,1.444444,420,420

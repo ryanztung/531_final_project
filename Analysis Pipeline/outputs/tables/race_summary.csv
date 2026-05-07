@@ -1,0 +1,6 @@
+race,count,selection_rate,mean_overall_score,mean_leadership_score,mean_experience_score,mean_skills_score
+asian,154,0.0974,15.1299,3.8117,4.1818,7.2013
+black,147,0.0884,16.2585,3.8435,4.3878,8.0952
+hispanic,203,0.0936,15.7192,4.3153,4.2069,7.3941
+unknown,175,0.0743,13.4457,3.44,3.6,6.4629
+white,161,0.0932,16.9255,4.4224,4.0497,8.6708

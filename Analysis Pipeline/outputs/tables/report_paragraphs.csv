@@ -1,0 +1,5 @@
+paragraph
+Bootstrap confidence intervals quantify uncertainty around group differences and impact ratios. Intervals that include zero (for differences) or one (for ratios) indicate limited evidence of robust disparity under this sample.
+"Regression models with controls (wording and qualification tier) estimate whether demographic coefficients persist after adjustment. Here, 0 demographic terms are significant at alpha=0.05; effect magnitude should be read alongside confidence intervals."
+Variance checks using Levene's test flag 0 score distributions with unequal spread across groups. Unequal variance can indicate instability even when mean gaps are small.
+"Interpretation is conservative: statistical non-significance does not prove fairness, and practical significance, sample size, and power constraints remain central to conclusions."

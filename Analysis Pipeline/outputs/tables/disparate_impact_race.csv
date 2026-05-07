@@ -1,0 +1,6 @@
+race,n,selection_rate,reference_group,absolute_gap,impact_ratio,passes_4_5_rule,small_sample_warning,group
+asian,154,0.0974,asian,0.0,1.0,True,False,asian
+hispanic,203,0.0936,asian,-0.0038,0.9609,True,False,hispanic
+white,161,0.0932,asian,-0.0042,0.9565,True,False,white
+black,147,0.0884,asian,-0.009,0.9079,True,False,black
+unknown,175,0.0743,asian,-0.0231,0.7627,False,False,unknown
