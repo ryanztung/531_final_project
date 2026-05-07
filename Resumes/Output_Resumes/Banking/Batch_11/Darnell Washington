@@ -2,45 +2,54 @@
   "name": "Darnell Washington",
   "education": [
     {
-      "school": "Univ. of Michigan",
-      "degree": "BS",
-      "details": "Electrical & Computer Engineering"
+      "school": "Minot State",
+      "degree": "B.A.",
+      "details": "Corporate Fitness"
     },
     {
-      "school": "UC Irvine",
-      "degree": "Certificate",
-      "details": "Project Management"
+      "school": "Frank Phillips College",
+      "degree": "A.A.",
+      "details": "Business Administration"
+    },
+    {
+      "school": "Minot State",
+      "degree": "Minor: Business Management"
+    },
+    {
+      "school": "Frank Phillips College",
+      "degree": "Business Administration"
     }
   ],
   "experience": [
     {
-      "title": "Assistant Banking Center Manager",
-      "dates": "2011–2014",
+      "title": "Banking Center Manager",
+      "dates": "Aug 2012–Current",
       "bullets": [
-        "Led 5 bankers"
+        "lead sales/service team"
       ]
     },
     {
-      "title": "Licensed Financial Specialist",
-      "dates": "2008–2010",
+      "title": "Personal Banker",
+      "dates": "Jan 2010–Aug 2012",
       "bullets": [
-        "Met high deposit/investment/credit goals"
+        "sell retail/small business products"
       ]
     },
     {
-      "title": "Field Account Exec",
-      "dates": "2006–2007",
+      "title": "Sales & Service Specialist",
+      "dates": "Aug 2007–Feb 2010",
       "bullets": [
-        "$6M+/mo subprime"
+        "resolve escalations"
       ]
     },
     {
-      "title": "Senior Loan Officer",
-      "dates": "2000–2006",
+      "title": "Service/Sales Support",
+      "dates": "Aug 2007–Feb 2010",
       "bullets": [
-        "Hired/trained"
+        "service/sales support"
       ]
     }
   ],
-  "skills_and_achievements": "Sales/loan origination, consultative selling, branch ops/compliance, training/coaching, audits/reconcilements. Licensed Financial Specialist (2008–2010). Windsor Capital Top/Platinum/Gold/Silver awards; Top Sales Producer."
+  "skills_and_achievements": "Consistent quarterly goal achiever; promoted associates; selected to market leadership team.",
+  "job_type": "Senior-level"
 }

@@ -3,6 +3,8 @@ import random
 import shutil
 import sys
 import json
+import pandas as pd
+from pathlib import Path
 
 # --- Configure environment --- 
 
@@ -13,10 +15,10 @@ RESUME_DIRECTORY = f'Resumes/Normalized_Resumes/{JOB_CATEGORY}'
 # Output resume directory
 OUTPUT_DIRECTORY = f'Resumes/Output_Resumes/{JOB_CATEGORY}'
 
-# Number of resumes to select
+# Selection parameters
 NUM_RACES = 5
-RESUMES_PER_RACE = 2
-SAMPLE_SIZE = NUM_RACES * RESUMES_PER_RACE
+NUM_GENDERS = 2
+SAMPLE_SIZE = NUM_RACES * NUM_GENDERS
 NUM_BATCHES = int(sys.argv[2])
 
 # Initialize name banks
@@ -86,11 +88,13 @@ for i in range(NUM_BATCHES):
 
     # Randomly select names
     selected_names = []
+    selected_races = []
 
     for race, name_bank in NAME_BANKS.items():
         male_name = generate_full_name(name_bank['male'], name_bank['last'])
         female_name = generate_full_name(name_bank['female'], name_bank['last'])
         selected_names.extend([male_name, female_name])
+        selected_races.extend([race, race])
     
     # Create batch directory
     batch_directory = f'{OUTPUT_DIRECTORY}/Batch_{i}'
@@ -102,3 +106,14 @@ for i in range(NUM_BATCHES):
         output_path = f'{batch_directory}/{name}'
 
         update_resume(input_path, output_path, name)
+
+    # Store summary CSV
+    df = pd.DataFrame({
+        'id': [f'{JOB_CATEGORY}/Batch_{i}/{name}' for name in selected_names],
+        'resume_id': [Path(resume).stem for resume in selected_resumes],
+        'name': selected_names,
+        'gender': ['male', 'female'] * NUM_RACES,
+        'race': selected_races
+    })
+
+    df.to_csv(f'{batch_directory}/summary.csv', index=False)
