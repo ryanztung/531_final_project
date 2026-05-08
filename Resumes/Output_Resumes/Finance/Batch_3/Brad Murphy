@@ -2,38 +2,38 @@
   "name": "Brad Murphy",
   "education": [
     {
-      "school": "University of the Punjab",
-      "degree": "B.S. Mathematics",
-      "details": "1997"
+      "school": "Texas A&M University–Corpus Christi",
+      "degree": "B.A. History",
+      "details": "2014"
     },
     {
-      "school": "Institute of Certified Public Accountants",
-      "degree": "CPA",
-      "details": "2012"
+      "school": "Lone Star Community College",
+      "degree": "High School Diploma",
+      "details": "2008"
     }
   ],
   "experience": [
     {
-      "title": "Finance Manager",
-      "dates": "2017–Present",
+      "title": "Finance Assistant",
+      "dates": "06/2013–09/2013",
       "bullets": [
-        "Led acquisition due diligence, projections, and bank financing"
+        "Entered revenue/expenses"
       ]
     },
     {
-      "title": "CFO",
-      "dates": "2011–2016",
+      "title": "Catering Specialist",
+      "dates": "01/2012–06/2012",
       "bullets": [
-        "Set strategy; built reporting and reserves; negotiated reinsurance; implemented ERP; reengineered finance (AR/AP/Treasury/GL)"
+        "Order prep/delivery"
       ]
     },
     {
-      "title": "Manager, Audit",
-      "dates": "2007–2011",
+      "title": "Customer Service/Driver/Food Line",
+      "dates": "02/2009–11/2011",
       "bullets": [
-        "Managed multi-country audits; resolved IFRS/GAAP issues; performed due diligence/valuations for M&A and IPOs"
+        "Order entry"
       ]
     }
   ],
-  "skills_and_achievements": "Corporate finance, M&A/IPO, due diligence & valuation, IFRS/US GAAP, financial modeling, budgeting/forecasting, treasury, taxation, ERP, internal controls/SOX, risk management, regulatory reporting (CMA). Employee of the Year (2010)"
+  "skills_and_achievements": "Financial statements and balance sheets, AP/AR, expense reports, sales tax and bank deposits, data entry/databases, QuickBooks, Excel, PowerPoint, Word, customer service."
 }

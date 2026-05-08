@@ -82,6 +82,14 @@ def update_resume(resume_path, output_path, name):
 # Gather resumes
 resume_files = [file for file in os.listdir(RESUME_DIRECTORY) if file.endswith('.json')]
 
+# Initialize metadata storage
+IDs = []
+resume_IDs = []
+name_list = []
+gender_list = []
+race_list = []
+
+# Create each batch
 for i in range(NUM_BATCHES):
     # Sample resumes
     selected_resumes = random.sample(resume_files, SAMPLE_SIZE)
@@ -107,13 +115,20 @@ for i in range(NUM_BATCHES):
 
         update_resume(input_path, output_path, name)
 
-    # Store summary CSV
-    df = pd.DataFrame({
-        'id': [f'{JOB_CATEGORY}/Batch_{i}/{name}' for name in selected_names],
-        'resume_id': [Path(resume).stem for resume in selected_resumes],
-        'name': selected_names,
-        'gender': ['male', 'female'] * NUM_RACES,
-        'race': selected_races
-    })
+    # Store metadata
+    IDs.extend([f'{JOB_CATEGORY}/Batch_{i}/{name}' for name in selected_names])
+    resume_IDs.extend([Path(resume).stem for resume in selected_resumes])
+    name_list.extend(selected_names)
+    gender_list.extend(['male', 'female'] * NUM_RACES)
+    race_list.extend(selected_races)
 
-    df.to_csv(f'{batch_directory}/summary.csv', index=False)
+# Store metadat CSV
+df = pd.DataFrame({
+    'id': IDs,
+    'resume_id': resume_IDs,
+    'name': name_list,
+    'gender': gender_list,
+    'race': race_list
+})
+
+df.to_csv(f'{OUTPUT_DIRECTORY}/summary.csv', index=False)

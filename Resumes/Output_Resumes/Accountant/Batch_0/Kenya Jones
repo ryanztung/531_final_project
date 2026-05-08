@@ -2,54 +2,50 @@
   "name": "Kenya Jones",
   "education": [
     {
-      "school": "University of Phoenix",
-      "degree": "MBA",
-      "details": "2011"
+      "school": "California State University, Hayward",
+      "degree": "M.S. Education",
+      "details": "Online Teaching & Learning, GPA 4.0"
     },
     {
-      "school": "Penn State",
-      "degree": "B.S.",
-      "details": "2005"
+      "school": "University of Maryland, College Park",
+      "degree": "B.S. Accounting",
+      "details": "1993"
     },
     {
-      "school": "La Salle",
-      "degree": "Certificate",
-      "details": "Fraud & Forensic Accounting, 2015"
-    },
-    {
-      "school": "CNAP",
-      "degree": "Paris Chamber of Commerce studies"
+      "school": "Jamaica",
+      "degree": "B.S. Business Administration",
+      "details": "1983"
     }
   ],
   "experience": [
     {
-      "title": "Accountant",
-      "dates": "2013–Present",
+      "title": "Senior Manager",
+      "dates": "1995–Present",
       "bullets": [
-        "build vendor programs, implement inventory auditing, enforce three-way match, random bank-disbursement audits, bank recs, month-end JEs/reports, monthly/quarterly/annual FS"
+        "lead global training programs (operations, finance, recruiting)"
       ]
     },
     {
-      "title": "QA/Mobile Software Tester",
-      "dates": "2010–2013",
+      "title": "Finance Liaison",
+      "dates": "1995–1997",
       "bullets": [
-        "tested accounting/business apps (incl. French), authored test plans, ran regression/security/smoke tests, logged localization/functional bugs"
+        "managed LMS/content"
       ]
     },
     {
-      "title": "Procurement Specialist",
-      "dates": "2006–2010",
+      "title": "Instructional Designer/Training Manager/DB Manager/Senior Accountant",
+      "dates": "2003–2004",
       "bullets": [
-        "lead buyer for 16 plants (US/Canada), French-language liaison, audits of req/PO accuracy, SAP migrations from AS/400, contract/bid negotiations, back-order management & expedites"
+        "designed/deploy training and maintain databases"
       ]
     },
     {
-      "title": "Freight Planning Contact",
-      "dates": "2005–2006",
+      "title": "Online Course Instructor",
+      "dates": "1993–1995",
       "bullets": [
-        "hazardous export documentation, global logistics coordination, itinerary changes, customer service"
+        "developed and taught online courses"
       ]
     }
   ],
-  "skills_and_achievements": "QuickBooks, SAP, AS/400, SQL, MS Office (Excel, Access, Word, PPT), bank recs & month-end close, financial statement prep, data analysis, inventory/audit programs, vendor negotiations & cost reduction, logistics/export docs, fluent French"
+  "skills_and_achievements": "Project/program management, instructional design (ILT & online), finance training, change management, PeopleSoft (Finance/HRMS), Microsoft Office, VideoScribe, financial reporting, P&L/variance analysis, billing process optimization; implemented International Fee Revenue DB & PeopleSoft billing—cut billing cycle from 2 weeks to 2 days; team leadership (hiring, reviews, career development); publications on online learning and conflict management; affiliations: PMI and ATD"
 }

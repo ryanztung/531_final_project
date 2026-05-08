@@ -2,43 +2,43 @@
   "name": "Kenya Jones",
   "education": [
     {
-      "school": "High School Diploma",
-      "degree": "High School Diploma"
+      "school": "New Mexico Highlands Univ",
+      "degree": "BSW",
+      "details": "4.0 GPA"
     },
     {
-      "school": "Clifton High School",
-      "degree": "Expected Jun 2023"
+      "school": "CNMCC",
+      "degree": "AS in Electronic Eng Tech",
+      "details": "3.96 GPA"
+    },
+    {
+      "school": "ITT Tech",
+      "degree": "AS in Electronic Eng Tech",
+      "details": "Salutatorian"
     }
   ],
   "experience": [
     {
-      "title": "Warehouse Picker",
-      "dates": "May 2021–Current",
+      "title": "Level 2 Ops Coordinator",
+      "dates": "2023-01-01 - Present",
       "bullets": [
-        "pick/pack"
+        "Led wet etch & thin film process"
       ]
     },
     {
-      "title": "Warehouse Employee",
-      "dates": "Feb–Apr 2021",
+      "title": "Practicum in substance abuse & IPV programs",
+      "dates": "2022-06-01 - 2023-06-30",
       "bullets": [
-        "inventory counts"
+        "Group facilitation, detox support, foster youth & fashion volunteer work"
       ]
     },
     {
-      "title": "Sales Associate & Cashier",
-      "dates": "Oct–Dec 2020",
+      "title": "Training",
+      "dates": "2021-09-01 - 2021-12-31",
       "bullets": [
-        "sales"
-      ]
-    },
-    {
-      "title": "Host",
-      "dates": "Jul–Aug 2020",
-      "bullets": [
-        "reservations"
+        "Matrix & Seeking Safety models, relapse prevention"
       ]
     }
   ],
-  "skills_and_achievements": "Cash/credit/check handling, POS/scanner operations, issue resolution, customer assistance, reservations, MS Office; warehouse picking/packing, labeling, pallet jacks, weighing/measuring, heavy lifting, safety/organization (clean, hazard-free workspaces); staff mentoring; bilingual English/Spanish"
+  "skills_and_achievements": "Ops coordination, wet etch, thin films, wafer QA, gas equip maintenance, mechanical alignment, training, community work, Phi Theta Kappa, Honor Roll, multiple academic awards"
 }
