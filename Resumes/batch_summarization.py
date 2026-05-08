@@ -28,7 +28,7 @@ df_corpus['human_score'] = df_corpus[['Annotator-1', 'Annotator-2']].mean(axis=1
 
 # Join dataframes
 df = pd.merge(df_summaries, df_corpus, on='resume_id')
-df = df[['id', 'resume_id', 'name', 'race', 'gender', 'human_score']]
+df = df[['id', 'name', 'race', 'gender', 'human_score']]
 
 # Save full summary to CSV
 df.to_csv(f'{BASE_DIRECTORY}/output_summary.csv', index=False)
