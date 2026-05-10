@@ -1,44 +1,94 @@
-# Fairness Analysis Extensions
+# Analysis Pipeline — Fairness Audit of an LLM Resume Scorer
 
-This pipeline keeps the original tables/plots and adds modular fairness tests for stronger statistical evidence.
+This folder contains the fairness analysis pipeline for the DSCI 531 final project on demographic invariance in multi-stage LLM resume screening. It consumes the per-resume scoring CSV produced by the upstream ATS simulator and produces tables, figures, and narrative outputs evaluating fairness across ground-truth gender and race.
 
-## Added tests and why they matter
+## What's in this folder
 
-- `disparate_impact_table`: Computes selection-rate gaps and impact ratios (4/5ths rule) to detect adverse impact in practical terms.
-- `bootstrap_metric_difference` and `bootstrap_impact_ratio`: Adds nonparametric 95% confidence intervals for mean/selection differences and impact ratios to quantify uncertainty.
-- `interaction_tests`: Tests demographic x wording interactions to evaluate whether wording changes outcomes differently by group.
-- `regression_with_controls`: Estimates demographic effects while controlling for wording and qualification tier, separating potential confounding from group effects.
-- `paired_variant_tests`: Uses within-base-resume pairing to isolate demographic cue effects from baseline resume quality differences.
-- `variance_checks`: Uses Levene's tests to detect uneven score spread (instability) across groups.
+```
+Analysis Pipeline/
+├── Analysis_Pipeline_updated.ipynb   # main notebook — run this end-to-end
+├── fairness_extensions.py            # modular fairness functions imported by the notebook
+├── similarity_scores_all.csv         # input: 840 model evaluations from the ATS simulator
+├── outputs/
+│   ├── tables/                       # CSV tables (created on run)
+│   └── figures/                      # PNG figures (created on run)
+└── README.md
+```
 
-## Interpretation guidance
+## Prerequisites
 
-- Statistical significance and practical significance are different: report both p-values and effect size magnitude.
-- Non-significant findings do not prove fairness; they can reflect low power or limited sample size.
-- Use matched/paired results as primary evidence when variants share the same base resume.
-- Treat impact ratio thresholds (e.g., 0.80) as screening heuristics, not definitive legal conclusions.
+- Python 3.10 or newer
+- Jupyter (for executing the notebook)
+- The Python packages listed below
 
-## New output files
+## Setup
 
-New tables are written to `outputs/tables/`:
+From this folder, install the required packages:
 
-- `disparate_impact_gender.csv`
-- `disparate_impact_race.csv`
+```bash
+pip install pandas numpy scipy statsmodels matplotlib seaborn scikit-learn shap jupyter nbconvert ipykernel
+```
+
+If you prefer an isolated environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate            # Windows: .venv\Scripts\activate
+pip install pandas numpy scipy statsmodels matplotlib seaborn scikit-learn shap jupyter nbconvert ipykernel
+```
+
+## Inputs
+
+The notebook reads `similarity_scores_all.csv` from this folder. The file must contain at least these columns (the upstream ATS simulator produces all of them):
+
+- Identifiers: `resume_id`, `variant_id`, `run_id`, `model_name`, `batch_id`, `jd_role`
+- Experimental conditions: `name_condition`, `wording_condition`, `format_condition`, `qualification_tier`
+- Ground-truth labels: `gender_true`, `race_true`
+- Model perception (diagnostic only): `race_predicted`
+- Scores: `overall_score`, `leadership_score`, `experience_score`, `skills_score`
+- Outcome: `hire_decision` (text values `hire` / `reject` / `consider`, normalized to 0/1 in the notebook)
+
+
+## How to run
+
+### Option A — interactive (recommended for inspecting plots)
+
+```bash
+jupyter notebook Analysis_Pipeline_updated.ipynb
+```
+
+Then choose `Cell → Run All`.
+
+The main analysis uses ground-truth columns (`gender_true`, `race_true`) throughout. The diagnostic at the end is the only place that reads `name_condition` and `race_predicted`, and it is clearly labeled as diagnostic.
+
+## Outputs
+
+### Tables (`outputs/tables/`)
+
+
+- `selection_rate_gap.csv` — selection rates and male − female gap
+- `confidence_intervals.csv` — bootstrap CIs for overall and leadership scores by `gender_true` and `race_true`
+- `statistical_tests.csv` — t-test on overall_score by gender_true
+- `interaction_summary.csv` — wording × gender_true means
+- `race_summary.csv` — per-race counts, selection rate, and mean sub-scores
+
+Extended fairness suite:
+
+- `disparate_impact_gender.csv`, `disparate_impact_race.csv`
+- `disparate_impact_gender_predicted.csv`, `disparate_impact_race_predicted.csv` (perception-side, for completeness)
 - `bootstrap_fairness_ci.csv`
-- `interaction_tests_gender_wording.csv`
-- `interaction_tests_race_wording.csv` (when sample size is adequate)
-- `regression_controls_overall.csv`
-- `regression_controls_selection.csv`
-- `paired_variant_tests.csv`
-- `variance_checks_gender.csv`
-- `variance_checks_race.csv`
-- `presentation_bullets.csv`
-- `report_paragraphs.csv`
+- `interaction_tests_gender_wording.csv`, `interaction_tests_race_wording.csv`
+- `regression_controls_overall.csv`, `regression_controls_selection.csv`
+- `paired_variant_tests.csv` (currently empty — see Limitations below)
+- `variance_checks_gender.csv`, `variance_checks_race.csv`
+- `presentation_bullets.csv`, `report_paragraphs.csv`
 
-Existing outputs are preserved:
+Diagnostic (predicted vs ground truth):
 
-- `selection_rate_gap.csv`
-- `confidence_intervals.csv`
-- `statistical_tests.csv`
-- `interaction_summary.csv`
-- `race_summary.csv`
+- `gender_cue_vs_truth_confusion.csv`
+- `race_predicted_vs_truth_confusion.csv`
+- `race_prediction_recall.csv`
+- `selection_rate_true_vs_predicted_race.csv`
+
+
+
