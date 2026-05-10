@@ -16,6 +16,8 @@ class ColumnMap:
     variant_id: str
     gender: str
     race: str
+    gender_predicted: Optional[str]
+    race_predicted: Optional[str]
     wording: str
     qualification: str
     selected: str
@@ -38,8 +40,10 @@ def infer_column_map(df: pd.DataFrame) -> ColumnMap:
     return ColumnMap(
         base_id=_first_existing(df, ["resume_id", "base_resume_id", "original_resume_id", "base_id"]),
         variant_id=_first_existing(df, ["variant_id", "resume_variant_id"], required=False) or "variant_id",
-        gender=_first_existing(df, ["name_condition", "gender_condition", "gender", "sex"]),
-        race=_first_existing(df, ["race", "race_condition", "ethnicity"]),
+        gender=_first_existing(df, ["gender_true", "gender", "gender_condition", "sex", "name_condition"]),
+        race=_first_existing(df, ["race_true", "race", "race_condition", "ethnicity", "race_predicted"]),
+        gender_predicted=_first_existing(df, ["name_condition", "gender_predicted", "predicted_gender"], required=False),
+        race_predicted=_first_existing(df, ["race_predicted", "predicted_race"], required=False),
         wording=_first_existing(df, ["wording_condition", "wording", "prompt_wording"]),
         qualification=_first_existing(df, ["qualification_tier", "qualification_level", "tier"]),
         selected=_first_existing(df, ["hire_decision", "selected", "callback", "outcome"]),
@@ -357,7 +361,8 @@ def run_extended_fairness_suite(
     results: Dict[str, pd.DataFrame] = {}
 
     # 1) Disparate impact tables.
-    gender_ref = "male_coded" if "male_coded" in set(df[colmap.gender].dropna().unique()) else None
+    gender_labels = ("male", "female") if colmap.gender == "gender_true" else ("male_coded", "female_coded")
+    gender_ref = gender_labels[0] if gender_labels[0] in set(df[colmap.gender].dropna().unique()) else None
     impact_gender_df = disparate_impact_table(
         df,
         group_col=colmap.gender,
@@ -390,14 +395,49 @@ def run_extended_fairness_suite(
     )
     results["disparate_impact_race"] = impact_race_df
 
+    if colmap.gender_predicted:
+        pred_gender_ref = "male_coded" if "male_coded" in set(df[colmap.gender_predicted].dropna().unique()) else None
+        impact_gender_pred_df = disparate_impact_table(
+            df,
+            group_col=colmap.gender_predicted,
+            outcome_col=colmap.selected,
+            reference_group=pred_gender_ref,
+            min_n=min_group_n,
+        )
+        impact_gender_pred_df["group"] = impact_gender_pred_df[colmap.gender_predicted]
+        impact_gender_pred_df = impact_gender_pred_df.rename(
+            columns={
+                "absolute_gap_vs_reference": "absolute_gap",
+                "impact_ratio_vs_reference": "impact_ratio",
+            }
+        )
+        results["disparate_impact_gender_predicted"] = impact_gender_pred_df
+
+    if colmap.race_predicted:
+        impact_race_pred_df = disparate_impact_table(
+            df,
+            group_col=colmap.race_predicted,
+            outcome_col=colmap.selected,
+            reference_group=None,
+            min_n=min_group_n,
+        )
+        impact_race_pred_df["group"] = impact_race_pred_df[colmap.race_predicted]
+        impact_race_pred_df = impact_race_pred_df.rename(
+            columns={
+                "absolute_gap_vs_reference": "absolute_gap",
+                "impact_ratio_vs_reference": "impact_ratio",
+            }
+        )
+        results["disparate_impact_race_predicted"] = impact_race_pred_df
+
     # 2) Bootstrap confidence intervals.
     boot_rows: List[Dict[str, object]] = []
-    if {"male_coded", "female_coded"}.issubset(set(df[colmap.gender].dropna().unique())):
+    if set(gender_labels).issubset(set(df[colmap.gender].dropna().unique())):
         score_boot = bootstrap_metric_difference(
             df,
             group_col=colmap.gender,
-            group_a="female_coded",
-            group_b="male_coded",
+            group_a=gender_labels[1],
+            group_b=gender_labels[0],
             metric_col=colmap.overall,
             n_boot=n_boot,
             seed=seed,
@@ -416,8 +456,8 @@ def run_extended_fairness_suite(
         sr_boot = bootstrap_metric_difference(
             df,
             group_col=colmap.gender,
-            group_a="female_coded",
-            group_b="male_coded",
+            group_a=gender_labels[1],
+            group_b=gender_labels[0],
             metric_col=colmap.selected,
             n_boot=n_boot,
             seed=seed,
@@ -437,8 +477,8 @@ def run_extended_fairness_suite(
             df,
             group_col=colmap.gender,
             outcome_col=colmap.selected,
-            protected_group="female_coded",
-            reference_group="male_coded",
+            protected_group=gender_labels[1],
+            reference_group=gender_labels[0],
             n_boot=n_boot,
             seed=seed,
         )

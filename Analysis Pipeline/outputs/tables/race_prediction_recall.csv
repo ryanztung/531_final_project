@@ -1,0 +1,6 @@
+race_true,n_true,n_correct,recall
+asian,168,141,0.839
+black,168,143,0.851
+hispanic,168,165,0.982
+native,168,0,0.0
+white,168,97,0.577

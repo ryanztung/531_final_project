@@ -1,7 +1,7 @@
-wording_condition,name_condition,mean_overall_score,selection_rate,count
-neutral,female_coded,14.7442,0.0864,301
-neutral,male_coded,11.7837,0.0571,245
-strong_leadership,female_coded,12.2857,0.0714,56
-strong_leadership,male_coded,19.8908,0.1429,119
-strong_technical,female_coded,22.6349,0.0952,63
-strong_technical,male_coded,21.125,0.1429,56
+wording_condition,gender_true,mean_overall_score,selection_rate,count
+neutral,female,44.874,0.374,262
+neutral,male,43.3957,0.3217,230
+strong_leadership,female,42.5638,0.266,94
+strong_leadership,male,46.5684,0.3474,95
+strong_technical,female,48.4688,0.2656,64
+strong_technical,male,54.3368,0.3789,95

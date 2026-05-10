@@ -1,0 +1,7 @@
+,by_race_true,by_race_predicted
+asian,0.3393,0.3312
+black,0.3393,0.3357
+hispanic,0.3333,0.3467
+native,0.369,
+white,0.3036,0.3134
+unknown,,0.3476

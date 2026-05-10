@@ -1,0 +1,6 @@
+race_predicted,asian,black,hispanic,native,white
+asian,141,0,0,13,0
+black,0,143,0,0,0
+hispanic,0,0,165,34,0
+unknown,27,25,3,84,71
+white,0,0,0,37,97
