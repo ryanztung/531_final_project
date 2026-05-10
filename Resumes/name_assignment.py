@@ -3,6 +3,8 @@ import random
 import shutil
 import sys
 import json
+import pandas as pd
+from pathlib import Path
 
 # --- Configure environment --- 
 
@@ -13,10 +15,10 @@ RESUME_DIRECTORY = f'Resumes/Normalized_Resumes/{JOB_CATEGORY}'
 # Output resume directory
 OUTPUT_DIRECTORY = f'Resumes/Output_Resumes/{JOB_CATEGORY}'
 
-# Number of resumes to select
+# Selection parameters
 NUM_RACES = 5
-RESUMES_PER_RACE = 2
-SAMPLE_SIZE = NUM_RACES * RESUMES_PER_RACE
+NUM_GENDERS = 2
+SAMPLE_SIZE = NUM_RACES * NUM_GENDERS
 NUM_BATCHES = int(sys.argv[2])
 
 # Initialize name banks
@@ -80,17 +82,27 @@ def update_resume(resume_path, output_path, name):
 # Gather resumes
 resume_files = [file for file in os.listdir(RESUME_DIRECTORY) if file.endswith('.json')]
 
+# Initialize metadata storage
+IDs = []
+resume_IDs = []
+name_list = []
+gender_list = []
+race_list = []
+
+# Create each batch
 for i in range(NUM_BATCHES):
     # Sample resumes
     selected_resumes = random.sample(resume_files, SAMPLE_SIZE)
 
     # Randomly select names
     selected_names = []
+    selected_races = []
 
     for race, name_bank in NAME_BANKS.items():
         male_name = generate_full_name(name_bank['male'], name_bank['last'])
         female_name = generate_full_name(name_bank['female'], name_bank['last'])
         selected_names.extend([male_name, female_name])
+        selected_races.extend([race, race])
     
     # Create batch directory
     batch_directory = f'{OUTPUT_DIRECTORY}/Batch_{i}'
@@ -102,3 +114,21 @@ for i in range(NUM_BATCHES):
         output_path = f'{batch_directory}/{name}'
 
         update_resume(input_path, output_path, name)
+
+    # Store metadata
+    IDs.extend([f'{JOB_CATEGORY}/Batch_{i}/{name}' for name in selected_names])
+    resume_IDs.extend([Path(resume).stem for resume in selected_resumes])
+    name_list.extend(selected_names)
+    gender_list.extend(['male', 'female'] * NUM_RACES)
+    race_list.extend(selected_races)
+
+# Store metadat CSV
+df = pd.DataFrame({
+    'id': IDs,
+    'resume_id': resume_IDs,
+    'name': name_list,
+    'gender': gender_list,
+    'race': race_list
+})
+
+df.to_csv(f'{OUTPUT_DIRECTORY}/summary.csv', index=False)

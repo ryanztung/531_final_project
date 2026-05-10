@@ -2,31 +2,62 @@
   "name": "Carlos Lopez",
   "education": [
     {
-      "school": "Seton Hall University",
-      "degree": "M.S. Professional Accounting",
-      "details": "Dec 2009, GPA 3.94"
+      "school": "Calcutta University",
+      "degree": "B.Com (Hons)",
+      "details": "2004"
     },
     {
-      "school": "B.S. Business Administration",
-      "degree": "B.S.",
-      "details": "May 2008, GPA 3.95"
+      "school": "Kochi",
+      "degree": "Finance Exec",
+      "details": "2008-09/2012"
+    },
+    {
+      "school": "Hyderabad",
+      "degree": "Finance Exec",
+      "details": "02/2008-09/2012"
+    },
+    {
+      "school": "Kolkata",
+      "degree": "Accounts Assistant",
+      "details": "04/2004-04/2006"
     }
   ],
   "experience": [
     {
-      "title": "Finance Manager",
-      "dates": "Jul 2014–Present",
+      "title": "Senior Finance Exec",
+      "dates": "09/2012–02/2015",
       "bullets": [
-        "own models and business cases for managed labs"
+        "Budgeting/forecasting"
       ]
     },
     {
-      "title": "Senior Financial Analyst",
-      "dates": "Jun 2012–Jul 2014",
+      "title": "Branch Finance Manager",
+      "dates": "02/2015–Present",
       "bullets": [
-        "partnered with regional ops on P&L trends for $1.5B region"
+        "Kochi"
+      ]
+    },
+    {
+      "title": "Finance Exec",
+      "dates": "02/2008–09/2012",
+      "bullets": [
+        "DIC India"
+      ]
+    },
+    {
+      "title": "Finance Officer",
+      "dates": "05/2006–01/2008",
+      "bullets": [
+        "Flameproof equipment JV"
+      ]
+    },
+    {
+      "title": "Accounts Assistant",
+      "dates": "04/2004–04/2006",
+      "bullets": [
+        "Garments firm"
       ]
     }
   ],
-  "skills_and_achievements": "Financial modeling, P&L/variance analysis, budgeting/forecasting, capital review, deal modeling/ROI, SOX/internal controls, FCPA auditing, data analytics, dashboards (Essbase/Hyperion, PeopleSoft, Tableau, Access/Excel), reporting to senior leadership; built standardized monthly reporting and deal tracking; supported $1.5B region and 5,000-employee SWB forecast."
+  "skills_and_achievements": "Budgeting/forecasting, IRR/NPV, cash flow & WC analysis, revenue recognition, MIS/board reporting, audit packs, credit control, asset register/depreciation, BG/LCs, indirect tax compliance, team leadership"
 }

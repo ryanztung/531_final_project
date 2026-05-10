@@ -2,38 +2,57 @@
   "name": "Luis Lopez",
   "education": [
     {
-      "school": "University of Houston Downtown",
-      "degree": "B.B.A.",
-      "details": "Business Finance & HR Management"
+      "school": "University of Phoenix",
+      "degree": "MBA",
+      "details": "Human Resource Management"
     },
     {
-      "school": "Houston Community College",
-      "degree": "A.A.",
-      "details": "General Studies"
+      "school": "Northeast Louisiana University",
+      "degree": "BBA",
+      "details": "Computer Information Systems"
+    },
+    {
+      "school": "Louisiana Delta Community College",
+      "degree": "AAS",
+      "details": "Process Technology"
     }
   ],
   "experience": [
     {
-      "title": "Assistant Banking Center Manager",
-      "dates": "2010–Present",
+      "title": "Mortgage Banking Doc Ops Specialist",
+      "dates": "2009–Present",
       "bullets": [
-        "Manage branch operations, compliance, audits, and staff performance"
+        "monitor lien release/payoff docs"
       ]
     },
     {
-      "title": "Sr. Financial Banker",
-      "dates": "2007–10",
+      "title": "Workforce Management Analyst",
+      "dates": "2007–08",
       "bullets": [
-        "Manage business accounts, cross-sold banking products, led marketing campaigns, and consistently exceeded sales goals"
+        "forecast volume"
       ]
     },
     {
-      "title": "Sr. Financial Service Rep",
-      "dates": "2003–07",
+      "title": "Office Manager",
+      "dates": "2006–09",
       "bullets": [
-        "Oversaw branch operations, customer service, credit assessments, and trained staff"
+        "trained staff"
+      ]
+    },
+    {
+      "title": "Office Manager",
+      "dates": "2006–09",
+      "bullets": [
+        "prepared taxes"
+      ]
+    },
+    {
+      "title": "Containment Quality Inspector",
+      "dates": "1999–07",
+      "bullets": [
+        "inspected products"
       ]
     }
   ],
-  "skills_and_achievements": "Leadership, sales strategy, risk analysis, credit evaluation, business development, client relations, budgeting, and operations management. Certified in NMLS and Microsoft; top 10% performer in sales, loans, and operations. Recognized with Platinum Loan Award. Skilled in Microsoft Office, Hummingbird, C-Net, Touch Pointe, and E-Automate. Active in leadership and community programs (Comerica Leadership Development, Red Cross, Junior Achievement, March of Dimes)."
+  "skills_and_achievements": "SAP, Lotus Notes, MS Access/Excel/Word/PowerPoint, reporting, automation testing, data tracking, staff scheduling, forecasting, and training. Strong analytical, organizational, and communication skills. Experienced in quality inspection, database management, and process improvement."
 }

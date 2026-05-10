@@ -2,51 +2,45 @@
   "name": "Jorge Ramirez",
   "education": [
     {
-      "school": "San Joaquin Valley College",
-      "degree": "Business Administration"
+      "school": "University of Phoenix",
+      "degree": "B.S. Business Management",
+      "details": "minor in Human Resources"
     },
     {
-      "school": "Professional Sales",
-      "degree": "Certificate"
+      "school": "...",
+      "degree": "...",
+      "details": ""
     }
   ],
   "experience": [
     {
-      "title": "CSR Lead/QA Coach/Acct Relationship/Online Banking Rep II",
-      "dates": "2010–Present",
+      "title": "Ops Manager",
+      "dates": "2011–Present",
       "bullets": [
-        "Account retention & acquisition"
+        "lead 15 staff across RE & Oil/Gas AP/AR"
       ]
     },
     {
-      "title": "QA revamp (QCD)",
-      "dates": "2007–10",
+      "title": "Personal Banker/Business Champion",
+      "dates": "2007–2011",
       "bullets": [
-        "QA revamp (QCD)"
+        "portfolio sales, coach tellers, originate personal/mortgage/business loans"
       ]
     },
     {
-      "title": "Outbound sales pilot",
-      "dates": "2007–10",
+      "title": "Wealth Mgmt Assoc III",
+      "dates": "2004–2007",
       "bullets": [
-        "floor leadership"
+        "support PBs, GL recs, loan packages"
       ]
     },
     {
-      "title": "training",
-      "dates": "2002–06",
+      "title": "Deposit Risk Ops Fraud Mgr",
+      "dates": "2001–2004",
       "bullets": [
-        "audit"
-      ]
-    },
-    {
-      "title": "rose to Regional Sales Mgr",
-      "dates": "2007–10",
-      "bullets": [
-        "corporate deals"
+        "led 12; averted >$1M loss"
       ]
     }
   ],
-  "skills_and_achievements": "Account retention & acquisition, QA coaching, outbound sales, online banking support, dispute/wire handling, team leadership, metrics reporting; Board-recognized ‘Pillar of Success’",
-  "job_type": "Mid-level"
+  "skills_and_achievements": "Quant analysis; account reconciliation; complex problem solving; procedure development; MS Office expert; staff leadership & development; conflict resolution; produced 1099/1098; managed 15-member ops team; led fraud unit averting >$1M loss."
 }

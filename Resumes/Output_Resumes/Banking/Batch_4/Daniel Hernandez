@@ -2,52 +2,49 @@
   "name": "Daniel Hernandez",
   "education": [
     {
-      "school": "Auburn University at Montgomery",
-      "degree": "A.S. Business Administration"
+      "school": "University of Delaware",
+      "degree": "B.S. in Operations Management",
+      "details": "2013"
     },
     {
-      "school": "Unknown",
-      "degree": "Unknown"
+      "school": "University of Delaware",
+      "degree": "Minor in Economics",
+      "details": "GPA 3.978/4.0"
+    },
+    {
+      "school": "University of Delaware",
+      "degree": "Alpha Lambda Delta",
+      "details": "National Society of Collegiate Scholars, Dean's List (all semesters)"
+    },
+    {
+      "school": "University of Delaware",
+      "degree": "Economics",
+      "details": "GPA 3.978/4.0"
     }
   ],
   "experience": [
     {
-      "title": "Mortgage Banking Foreclosure Specialist",
-      "dates": "2014–Present",
+      "title": "Associate, Investment Banking Operations",
+      "dates": "07/2013–Present",
       "bullets": [
-        "foreclosure ops",
-        "SCRA review",
-        "client milestone tracking"
+        "operations role (firm/city undisclosed)"
       ]
     },
     {
-      "title": "Consumer Underwriter II",
-      "dates": "2011–13",
+      "title": "Intern, Syndicated Loan Operations",
+      "dates": "06/2012–12/2012",
       "bullets": [
-        "loss mitigation underwriting",
-        "FHA restructuring",
-        "income verification",
-        "peer reviews"
+        "maintained 150+ deals/1000+ loans"
       ]
     },
     {
-      "title": "Loan Document Specialist II",
-      "dates": "2008–10",
+      "title": "Intern, Derivatives Operations",
+      "dates": "12/2011–05/2012",
       "bullets": [
-        "loan booking/review",
-        "QC",
-        "FHA/VA compliance"
-      ]
-    },
-    {
-      "title": "Loan Processor",
-      "dates": "2003–08",
-      "bullets": [
-        "verified borrower docs",
-        "cleared title exceptions",
-        "processed 30+ files daily"
+        "built client contact DB"
       ]
     }
   ],
-  "skills_and_achievements": "Default servicing, underwriting, QA, risk assessment, documentation review, income analysis, and loan operations."
+  "skills_and_achievements": "Microsoft Office (Excel/PowerPoint/Word/Access)",
+  "job_type": "Senior-level"
 }
